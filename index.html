@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delivering website </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> Golu DeliverEase</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="home">
+            <h1>Welcome to DeliverEase</h1>
+            <p>Your reliable delivery partner for all your needs!</p>
+            <button onclick="scrollToSection('order')">Order Now</button>
+        </section>
+
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-item">Food Delivery</div>
+            <div class="service-item">Grocery Delivery</div>
+            <div class="service-item">Parcel Delivery</div>
+        </section>
+
+        
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="food">Food Delivery</option>
+                    <option value="grocery">Grocery Delivery</option>
+                    <option value="parcel">Parcel Delivery</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: singhshashank@gmail.com</p>
+            <p>Phone: 9111729722</p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 DeliverEase. All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
